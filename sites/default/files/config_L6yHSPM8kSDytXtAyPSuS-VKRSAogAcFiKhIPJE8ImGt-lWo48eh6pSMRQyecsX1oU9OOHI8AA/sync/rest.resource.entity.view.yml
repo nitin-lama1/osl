@@ -1,0 +1,20 @@
+uuid: 8f8550dc-eb04-4f07-ac8d-4e7e1c414031
+langcode: en
+status: false
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - serialization
+    - views
+id: entity.view
+plugin_id: 'entity:view'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - basic_auth

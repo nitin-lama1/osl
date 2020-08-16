@@ -1,0 +1,20 @@
+uuid: 088fc89a-8a1d-464a-8bc5-5b177bb21378
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - custom_rest_api
+    - hal
+    - serialization
+id: custom_post_api
+plugin_id: custom_post_api
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - basic_auth

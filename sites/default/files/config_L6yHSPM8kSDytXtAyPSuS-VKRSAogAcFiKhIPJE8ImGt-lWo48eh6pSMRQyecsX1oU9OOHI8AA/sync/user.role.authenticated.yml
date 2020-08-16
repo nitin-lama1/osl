@@ -1,0 +1,26 @@
+uuid: 8e1d24e3-7dfe-4d37-8905-88f760b82baf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer rest resources'
+  - 'create json_data content'
+  - 'delete own json_data content'
+  - 'edit own json_data content'
+  - 'post comments'
+  - 'restful get custom_api'
+  - 'restful post custom_post_api'
+  - 'restful post custom_post_create'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

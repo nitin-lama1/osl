@@ -1,0 +1,36 @@
+uuid: 3d6bb16f-3516-4a85-b9a1-298b8a8405d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.json_data.body
+    - field.field.node.json_data.field_category
+    - field.field.node.json_data.field_json_image
+    - field.field.node.json_data.field_tags
+    - node.type.json_data
+  module:
+    - text
+    - user
+id: node.json_data.teaser
+targetEntityType: node
+bundle: json_data
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_category: true
+  field_json_image: true
+  field_tags: true

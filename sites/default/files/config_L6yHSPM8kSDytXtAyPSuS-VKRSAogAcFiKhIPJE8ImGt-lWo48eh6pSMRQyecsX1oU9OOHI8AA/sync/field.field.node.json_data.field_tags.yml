@@ -1,0 +1,29 @@
+uuid: 314696a8-81f8-4d22-82ea-029858952cd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.json_data
+    - taxonomy.vocabulary.tags
+id: node.json_data.field_tags
+field_name: field_tags
+entity_type: node
+bundle: json_data
+label: 'Meta tag'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

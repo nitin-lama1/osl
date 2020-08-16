@@ -1,0 +1,14 @@
+custom_rest_api.get_resource:
+ path: 'data/{apikey}/{node_id}'
+ defaults:
+   _controller: '\Drupal\custom_rest_api\Controller\GetController::GetResource'
+ requirements:
+   _permission: 'access content'
+
+custom_rest_api.admin_settings:
+ path: '/admin/config/custom_rest_api'
+ defaults:
+   _form: '\Drupal\custom_rest_api\Form\ApikeyConfiguration'
+   _title: 'API Key'
+ requirements:
+   _permission: 'administer site configuration'

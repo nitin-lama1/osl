@@ -1,0 +1,5 @@
+name: Custom Rest Api
+type: module
+description: Post & Get Functionality.
+core: 8.x
+package: custom

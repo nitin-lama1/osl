@@ -1,0 +1,18 @@
+{
+    "type": { "value" : "json_data" },
+    "title": { "value":"Test Title" },
+    "body": { "value": "This is the test body." },
+    "category": {
+        "value": ["category_test234", "category_test432"]
+        },
+    "meta_tag": {
+        "value": ["metatag_test567", "metatag_test765"]
+        },
+    "file": {
+        "filename": "image1.jpeg",
+        "filesize": "1",
+        "width" :1920,
+        "height": 1080,
+        "image": "Enter Base64 encoded code of the image"
+        }
+}
